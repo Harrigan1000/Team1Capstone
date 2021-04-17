@@ -11,6 +11,10 @@
 		D84F0004262B33B400B45C8C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0003262B33B400B45C8C /* ContentView.swift */; };
 		D84F0006262B33B700B45C8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84F0005262B33B700B45C8C /* Assets.xcassets */; };
 		D84F0009262B33B700B45C8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84F0008262B33B700B45C8C /* Preview Assets.xcassets */; };
+		D84F0012262B33EA00B45C8C /* MindfulnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0011262B33EA00B45C8C /* MindfulnessView.swift */; };
+		D84F0015262B341000B45C8C /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0014262B341000B45C8C /* CommunityView.swift */; };
+		D84F0018262B343000B45C8C /* HealthHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0017262B343000B45C8C /* HealthHabitsView.swift */; };
+		D84F001B262B344C00B45C8C /* PhysicalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		D84F0005262B33B700B45C8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D84F0008262B33B700B45C8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D84F000A262B33B700B45C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D84F0011262B33EA00B45C8C /* MindfulnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulnessView.swift; sourceTree = "<group>"; };
+		D84F0014262B341000B45C8C /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		D84F0017262B343000B45C8C /* HealthHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthHabitsView.swift; sourceTree = "<group>"; };
+		D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityView.swift; sourceTree = "<group>"; };
 		D84FFFFE262B33B400B45C8C /* Team1Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team1Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,6 +45,10 @@
 			isa = PBXGroup;
 			children = (
 				D84F0001262B33B400B45C8C /* Team1CapstoneApp.swift */,
+				D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */,
+				D84F0011262B33EA00B45C8C /* MindfulnessView.swift */,
+				D84F0017262B343000B45C8C /* HealthHabitsView.swift */,
+				D84F0014262B341000B45C8C /* CommunityView.swift */,
 				D84F0003262B33B400B45C8C /* ContentView.swift */,
 				D84F0005262B33B700B45C8C /* Assets.xcassets */,
 				D84F000A262B33B700B45C8C /* Info.plist */,
@@ -138,8 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D84F001B262B344C00B45C8C /* PhysicalActivityView.swift in Sources */,
 				D84F0004262B33B400B45C8C /* ContentView.swift in Sources */,
 				D84F0002262B33B400B45C8C /* Team1CapstoneApp.swift in Sources */,
+				D84F0015262B341000B45C8C /* CommunityView.swift in Sources */,
+				D84F0018262B343000B45C8C /* HealthHabitsView.swift in Sources */,
+				D84F0012262B33EA00B45C8C /* MindfulnessView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
