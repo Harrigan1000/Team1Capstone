@@ -8,31 +8,77 @@
 import SwiftUI
 
 struct ContentView: View {
-    // Mark Properties:
-    
-    @State var mainBullets = ["Mindfullness", "Physical Activity", "Health Habits", "Community"]
-    
-    
-    // Mark Body:
     var body: some View {
+        
         NavigationView {
-            VStack {
-                List(mainBullets, id: \.self) {
-                    bullets in
-                    NavigationLink(
-                        destination: MindfulnessView(),
-                        label: {
-                            Text(bullets)
-                        })
-                    .padding()
+            VStack(alignment: .leading) {
+                
+                VStack {
+                    TextField("Consciousness", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
+                        .padding([.leading, .bottom, .trailing])
+                        .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    
+                    TextField("A Mind and Body Health App", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                        
+                        
+                    
                 }
-            }//VSTACK END POINT
-            .onAppear {
-                mainBullets.sort()
+                Group{
+                NavigationLink(
+                    destination: CommunityView(),
+                    label: {
+                        Text("Community")
+                    })
+                    .padding(.leading)
+                    .padding()
+                    .font(.title)
+                
+                NavigationLink(
+                    destination: HealthHabitsView(),
+                    label: {
+                        Text("Health Habits")
+                    })
+                    .padding(.leading)
+                    .padding()
+                    .font(.title)
+                
+                NavigationLink(
+                    destination: MindfulnessView(),
+                    label: {
+                        Text("Mindfulness")
+                    })
+                    .padding(.leading)
+                    .padding()
+                    .font(.title)
+                
+                NavigationLink(
+                    destination: PhysicalActivityView(),
+                    label: {
+                        Text("Physical Activity")
+                    })
+                    .padding(.leading)
+                    .padding()
+                    .font(.title)
+                Spacer()
+                }
+                
+                
+                
+                
+                
             }
-        }// NAVIGATIONVIEW END POINT
-    }// BODY END POINT
-}// STRUCT END POINT
+            
+            
+        
+            
+        }//End Point Navigation View
+    }//End Point Body
+}//End Point Struct
+
 
 
 // Mark Preview:

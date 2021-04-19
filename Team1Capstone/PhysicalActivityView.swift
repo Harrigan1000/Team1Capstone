@@ -8,6 +8,12 @@
 import SwiftUI
 
 struct PhysicalActivityView: View {
+    //Mark Properties:
+     
+     @State var physicalActivity = ["Strength", "Resistance", "Flexibility", "User Movement"]
+     
+     // Mark Body:
+    
     var body: some View {
         Text("Physical Activity")
     }
