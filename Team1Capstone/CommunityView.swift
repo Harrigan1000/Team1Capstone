@@ -14,15 +14,11 @@ struct CommunityView: View {
         NavigationView {
             VStack {
                 
-                TextField("Community", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .padding([.leading, .bottom, .trailing])
-                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                TextField("A Mind and Body Experience ", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                Text("Building a Community Together")
+                    .font(.title3)
+                   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                   .foregroundColor(.orange)
+               
                 
                 Image(systemName: "hands.clap.fill")
                     .renderingMode(.original)
@@ -30,29 +26,67 @@ struct CommunityView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width:180, height:180)
                 
-                NavigationLink(
-                    destination: MindfulnessView(),
-                    label: {
-                        Text("Community")
-                    })
-                NavigationLink(
-                    destination: MindfulnessView(),
-                    label: {
-                        Text("Health Habits")
-                    })
-                NavigationLink(
-                    destination: MindfulnessView(),
-                    label: {
-                        Text("Mindfulness")
-                    })
-                NavigationLink(
-                    destination: MindfulnessView(),
-                    label: {
-                        Text("Physical Activity")
-                    })
+                
                 Spacer()
                 
+                //HSTACK links to screens - located bottom of the screen
+                HStack{
+                    Spacer()
+                    NavigationLink(
+                        destination: ContentView(),
+                        label: {
+                            Image(systemName: "house.circle")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: CommunityView(),
+                        label: {
+                            Image(systemName: "hands.clap.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: HealthHabitsView(),
+                        label: {
+                            Image(systemName: "heart.circle")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: MindfulnessView(),
+                        label: {
+                            Image(systemName: "face.smiling")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: PhysicalActivityView(),
+                        label: {
+                            Image(systemName: "bicycle")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    Spacer()
+                }//End Point HStack
+                .padding()
+                
             }//End Point VSTACK
+            .navigationTitle("⚕️Community")
             
             
         }//End Point Navigation View

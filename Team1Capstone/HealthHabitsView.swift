@@ -10,29 +10,16 @@ import SwiftUI
 struct HealthHabitsView: View {
    //Mark Properties:
     
-    @State var mainBullets = ["Eating Habits", "Nutritional Needs", "Meal Preparation", "Track Nutrition"]
+    @State var mainBullets = ["Eating Habits", "Nutritional Needs", "Meal Preparation", "Track Nutrition", "Food Costs"]
     
     // Mark Body:
     var body: some View {
         NavigationView {
             VStack {
-                TextField("Health Habits", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .padding([.leading, .bottom, .trailing])
-                    .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                
-                TextField("Nutritional Needs Suggestions", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
-                
-                Image(systemName: "heart.circle")
-                    .renderingMode(.original)
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width:180, height:180)
-                    .padding()
-                
+                Text("How We Care For Ourselves")
+                    .font(.title3)
+                   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                   .foregroundColor(.orange)
                 
                 List(mainBullets, id: \.self) {
                     bullets in
@@ -43,13 +30,76 @@ struct HealthHabitsView: View {
                         })
                     .padding()
                 }
+                .navigationTitle("⚕️Health Habits")
+                .foregroundColor(.yellow)
+                .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
+                
+                
+                //HSTACK links to screens - located bottom of the screen
+                HStack{
+                    Spacer()
+                    NavigationLink(
+                        destination: ContentView(),
+                        label: {
+                            Image(systemName: "house.circle")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: CommunityView(),
+                        label: {
+                            Image(systemName: "hands.clap.fill")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: HealthHabitsView(),
+                        label: {
+                            Image(systemName: "heart.circle")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: MindfulnessView(),
+                        label: {
+                            Image(systemName: "face.smiling")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    
+                    NavigationLink(
+                        destination: PhysicalActivityView(),
+                        label: {
+                            Image(systemName: "bicycle")
+                                .renderingMode(.original)
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width:50, height:50)
+                        })
+                    Spacer()
+                }//End Point HStack
+                }
+                
+               
+                .padding()
             }//VSTACK END POINT
             .onAppear {
                 mainBullets.sort()
             }
         }// NAVIGATIONVIEW END POINT
     }// BODY END POINT
-}// STRUCT END POINT
+// STRUCT END POINT
 
 // Mark Preview:
 struct HealthHabitsView_Previews: PreviewProvider {
