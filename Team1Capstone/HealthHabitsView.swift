@@ -26,6 +26,13 @@ struct HealthHabitsView: View {
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                 
+                Image(systemName: "heart.circle")
+                    .renderingMode(.original)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height:180)
+                    .padding()
+                
                 
                 List(mainBullets, id: \.self) {
                     bullets in

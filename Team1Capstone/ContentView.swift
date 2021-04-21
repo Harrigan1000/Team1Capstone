@@ -16,69 +16,64 @@ struct ContentView: View {
                 VStack {
                     TextField("Consciousness", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                         .foregroundColor(/*@START_MENU_TOKEN@*/.red/*@END_MENU_TOKEN@*/)
-                        .padding([.leading, .bottom, .trailing])
+                        .padding([.leading, .trailing])
                         .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     
                     TextField("A Mind and Body Health App", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
-                        
-                        
+                        .padding()
                     
-                }
+                    Image(systemName: "at.circle.fill")
+                        .renderingMode(.original)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width:180, height:180)
+                }.padding
+                
                 Group{
-                NavigationLink(
-                    destination: CommunityView(),
-                    label: {
-                        Text("Community")
-                    })
-                    .padding(.leading)
-                    .padding()
-                    .font(.title)
-                
-                NavigationLink(
-                    destination: HealthHabitsView(),
-                    label: {
-                        Text("Health Habits")
-                    })
-                    .padding(.leading)
-                    .padding()
-                    .font(.title)
-                
-                NavigationLink(
-                    destination: MindfulnessView(),
-                    label: {
-                        Text("Mindfulness")
-                    })
-                    .padding(.leading)
-                    .padding()
-                    .font(.title)
-                
-                NavigationLink(
-                    destination: PhysicalActivityView(),
-                    label: {
-                        Text("Physical Activity")
-                    })
-                    .padding(.leading)
-                    .padding()
-                    .font(.title)
-                Spacer()
+                    NavigationLink(
+                        destination: CommunityView(),
+                        label: {
+                            Text("Community")
+                        })
+                        .padding(.leading)
+                        .padding(5)
+                        .font(.title)
+                    
+                    NavigationLink(
+                        destination: HealthHabitsView(),
+                        label: {
+                            Text("Health Habits")
+                        })
+                        .padding(.leading)
+                        .padding(5)
+                        .font(.title)
+                    
+                    NavigationLink(
+                        destination: MindfulnessView(),
+                        label: {
+                            Text("Mindfulness")
+                        })
+                        .padding(.leading)
+                        .padding(5)
+                        .font(.title)
+                    
+                    NavigationLink(
+                        destination: PhysicalActivityView(),
+                        label: {
+                            Text("Physical Activity")
+                        })
+                        .padding(.leading)
+                        .padding(5)
+                        .font(.title)
+                    Spacer()
                 }
-                
-                
-                
-                
-                
             }
-            
-            
-        
-            
         }//End Point Navigation View
     }//End Point Body
 }//End Point Struct
-
 
 
 // Mark Preview:
@@ -87,3 +82,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

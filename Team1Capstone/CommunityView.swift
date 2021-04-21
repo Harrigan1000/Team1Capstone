@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CommunityView: View {
+    
+    
     var body: some View {
         NavigationView {
             VStack {
@@ -21,6 +23,12 @@ struct CommunityView: View {
                 TextField("A Mind and Body Experience ", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                     .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
+                
+                Image(systemName: "hands.clap.fill")
+                    .renderingMode(.original)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width:180, height:180)
                 
                 NavigationLink(
                     destination: MindfulnessView(),
@@ -45,6 +53,8 @@ struct CommunityView: View {
                 Spacer()
                 
             }//End Point VSTACK
+            
+            
         }//End Point Navigation View
     }//End Point Body
 }//End Point Struct
