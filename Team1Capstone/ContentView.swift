@@ -29,7 +29,7 @@ struct ContentView: View {
                 
                 Group{
                     NavigationLink(
-                        destination: CommunityView(),
+                        destination: CommunityView1(),
                         label: {
                             Text("Community")
                         })

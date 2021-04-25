@@ -8,30 +8,52 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
+    
+    var framework: Framework
+    
     var body: some View {
         VStack {
-            FrameworkTitleView(name: "Metal", imageName: "metal", description: "Metal provides near-direct access to the graphics processing unit (GPU), enabling you to maximize the graphics and compute potential of your apps on iOS, macOS, and tvOS.\n\nBuilding on an approachable, low-overhead architecture with precompiled GPU shaders, fine-grained resource control, and multithreading support, Metal further evolves support for GPU-driven command creation, simplifies working with the array of Metal-capable GPUs, and lets you tap into Pro power of Mac Pro and Pro Display XDR.")
+            HStack {
+                Spacer()
+                Button {
+                    
+                } label: {
+                    Image(systemName: "xmark")
+                        .foregroundColor(Color(.label))
+                        .imageScale(.large)
+                        .frame(width: 44, height: 44)
+                }
+            }
+            .padding()
+            
+            
+            Spacer()
+            
+            FrameworkTitleView(framework: framework)
+            
+            Text(framework.description)
                 .font(.body)
                 .padding()
+            
+            Spacer()
             
             Button {
                 
             } label: {
                 Text("Learn More")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .frame(width: 280, height: 50)
+                    .background(Color.red)
+                    .foregroundColor(.white)
+                    .cornerRadius(10)
             }
-            .font(.title2)
-            .background(Color.red)
-            .frame(width: 280, height: 50)
-            .foregroundColor(.white)
-            .cornerRadius(10)
-            
-            
         }
     }
 }
 
 struct FrameworkDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        FrameworkDetailView()
+        FrameworkDetailView(framework: MockData.sampleFramework)
     }
 }

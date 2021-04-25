@@ -8,28 +8,22 @@
 import SwiftUI
 
 let columns: [GridItem] = [GridItem(.flexible()),
+                           GridItem(.flexible()),
                            GridItem(.flexible())
 ]
 
 struct CommunityView1: View {
     var body: some View {
         NavigationView {
-            VStack {
-                Spacer()
+            ScrollView {
                 LazyVGrid(columns: columns) {
-                    FrameworkTitleView(name: "App Clips", imageName: "arkit", description: "")
-                    FrameworkTitleView(name: "App Clips", imageName: "carplay", description: "")
-                    FrameworkTitleView(name: "App Clips", imageName: "catalyst", description: "")
-                    FrameworkTitleView(name: "App Clips", imageName: "cloudkit", description: "")
-                    FrameworkTitleView(name: "App Clips", imageName: "healthkit", description: "")
-                    FrameworkTitleView(name: "App Clips", imageName: "metal", description: "")
+                    ForEach(MockData.frameworks, id: \.id) { framework in
+                        FrameworkTitleView(framework: framework)
+                    }
                 }
-                Spacer()
-                HStackBottomView()
-                    .padding()
             }
-            .navigationTitle("⚕️Community")
             
+            .navigationTitle("⚕️Community")
         }
     }
 }
@@ -43,25 +37,23 @@ struct CommunityView1_Previews: PreviewProvider {
 // FrameworkTitleView Refactored (This will be used in flexible Grid that will create in community view
 struct FrameworkTitleView: View {
     
-    let name: String
-    let imageName: String
-    let description: String
+    let framework: Framework
+    
     
     var body: some View {
         VStack {
             
-            Image(imageName)
+            Image(framework.imageName)
                 .resizable()
                 .frame(width: 90, height: 90)
-            Text(name)
+            Text(framework.name)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .scaledToFit()
                 .minimumScaleFactor(0.6)
-            Text(description)
-                .font(.title2)
             
         }
+        .padding()
     }
     
     
