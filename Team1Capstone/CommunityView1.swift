@@ -14,6 +14,8 @@ struct CommunityView1: View {
     let columns: [GridItem] = [GridItem(.flexible()),
                                GridItem(.flexible()),
                                GridItem(.flexible())
+                               
+                               
     ]
     
     

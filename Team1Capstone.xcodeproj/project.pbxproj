@@ -16,6 +16,7 @@
 		D84F0018262B343000B45C8C /* HealthHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0017262B343000B45C8C /* HealthHabitsView.swift */; };
 		D84F001B262B344C00B45C8C /* PhysicalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */; };
 		D85039BE2636169400604C3E /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85039BD2636169400604C3E /* FrameworkGridViewModel.swift */; };
+		D85039C12636242400604C3E /* Meditation3.png in Resources */ = {isa = PBXBuildFile; fileRef = D85039C02636242400604C3E /* Meditation3.png */; };
 		D87E4B6F2635AF3B00156D09 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B6E2635AF3B00156D09 /* Framework.swift */; };
 		D87E4B722635C0CC00156D09 /* CommunityView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B712635C0CC00156D09 /* CommunityView1.swift */; };
 		D87E4B752635C37400156D09 /* HStackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B742635C37400156D09 /* HStackBottomView.swift */; };
@@ -34,6 +35,7 @@
 		D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityView.swift; sourceTree = "<group>"; };
 		D84FFFFE262B33B400B45C8C /* Team1Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team1Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85039BD2636169400604C3E /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
+		D85039C02636242400604C3E /* Meditation3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meditation3.png; sourceTree = "<group>"; };
 		D87E4B6E2635AF3B00156D09 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
 		D87E4B712635C0CC00156D09 /* CommunityView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView1.swift; sourceTree = "<group>"; };
 		D87E4B742635C37400156D09 /* HStackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackBottomView.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				D84F0014262B341000B45C8C /* CommunityView.swift */,
 				D84F0003262B33B400B45C8C /* ContentView.swift */,
 				D84F0005262B33B700B45C8C /* Assets.xcassets */,
+				D85039C02636242400604C3E /* Meditation3.png */,
 				D84F000A262B33B700B45C8C /* Info.plist */,
 				D84F0007262B33B700B45C8C /* Preview Content */,
 				D87E4B6E2635AF3B00156D09 /* Framework.swift */,
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85039C12636242400604C3E /* Meditation3.png in Resources */,
 				D84F0009262B33B700B45C8C /* Preview Assets.xcassets in Resources */,
 				D84F0006262B33B700B45C8C /* Assets.xcassets in Resources */,
 			);
