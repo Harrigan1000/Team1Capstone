@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HealthHabitsView: View {
-   //Mark Properties:
+    //Mark Properties:
     
     @State var mainBullets = ["Eating Habits", "Nutritional Needs", "Meal Preparation", "Track Nutrition", "Food Costs"]
     
@@ -18,8 +18,9 @@ struct HealthHabitsView: View {
             VStack {
                 Text("How We Care For Ourselves")
                     .font(.title3)
-                   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                   .foregroundColor(.orange)
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.orange)
+
                 
                 List(mainBullets, id: \.self) {
                     bullets in
@@ -28,7 +29,7 @@ struct HealthHabitsView: View {
                         label: {
                             Text(bullets)
                         })
-                    .padding()
+                        .padding()
                 }
                 .navigationTitle("⚕️Health Habits")
                 .foregroundColor(.yellow)
@@ -49,7 +50,7 @@ struct HealthHabitsView: View {
                         })
                     
                     NavigationLink(
-                        destination: CommunityView(),
+                        destination: CommunityView1(),
                         label: {
                             Image(systemName: "hands.clap.fill")
                                 .renderingMode(.original)
@@ -89,16 +90,16 @@ struct HealthHabitsView: View {
                         })
                     Spacer()
                 }//End Point HStack
-                }
-                
-               
-                .padding()
-            }//VSTACK END POINT
-            .onAppear {
-                mainBullets.sort()
             }
-        }// NAVIGATIONVIEW END POINT
-    }// BODY END POINT
+            
+            
+            .padding()
+        }//VSTACK END POINT
+        .onAppear {
+            mainBullets.sort()
+        }
+    }// NAVIGATIONVIEW END POINT
+}// BODY END POINT
 // STRUCT END POINT
 
 // Mark Preview:

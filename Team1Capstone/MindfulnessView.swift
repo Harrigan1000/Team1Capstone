@@ -19,9 +19,9 @@ struct MindfulnessView: View {
             VStack {
                 Text("Day to Day Exercises")
                     .font(.title2)
-                   .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                   .foregroundColor(.orange)
-                    
+                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .foregroundColor(.orange)
+                
                 List(mindfulnessBullets, id: \.self) {
                     bullets in
                     NavigationLink(
@@ -29,7 +29,7 @@ struct MindfulnessView: View {
                         label: {
                             Text(bullets)
                         })
-                    .padding()
+                        .padding()
                 }
                 
                 //HSTACK links to screens - located bottom of the screen
@@ -46,7 +46,7 @@ struct MindfulnessView: View {
                         })
                     
                     NavigationLink(
-                        destination: CommunityView(),
+                        destination: CommunityView1(),
                         label: {
                             Image(systemName: "hands.clap.fill")
                                 .renderingMode(.original)

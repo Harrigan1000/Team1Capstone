@@ -15,6 +15,10 @@
 		D84F0015262B341000B45C8C /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0014262B341000B45C8C /* CommunityView.swift */; };
 		D84F0018262B343000B45C8C /* HealthHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0017262B343000B45C8C /* HealthHabitsView.swift */; };
 		D84F001B262B344C00B45C8C /* PhysicalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */; };
+		D87E4B6F2635AF3B00156D09 /* Framework.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B6E2635AF3B00156D09 /* Framework.swift */; };
+		D87E4B722635C0CC00156D09 /* CommunityView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B712635C0CC00156D09 /* CommunityView1.swift */; };
+		D87E4B752635C37400156D09 /* HStackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B742635C37400156D09 /* HStackBottomView.swift */; };
+		D87E4B782635CB2300156D09 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B772635CB2300156D09 /* FrameworkDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		D84F0017262B343000B45C8C /* HealthHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthHabitsView.swift; sourceTree = "<group>"; };
 		D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityView.swift; sourceTree = "<group>"; };
 		D84FFFFE262B33B400B45C8C /* Team1Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team1Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87E4B6E2635AF3B00156D09 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
+		D87E4B712635C0CC00156D09 /* CommunityView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView1.swift; sourceTree = "<group>"; };
+		D87E4B742635C37400156D09 /* HStackBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HStackBottomView.swift; sourceTree = "<group>"; };
+		D87E4B772635CB2300156D09 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 				D84F0005262B33B700B45C8C /* Assets.xcassets */,
 				D84F000A262B33B700B45C8C /* Info.plist */,
 				D84F0007262B33B700B45C8C /* Preview Content */,
+				D87E4B6E2635AF3B00156D09 /* Framework.swift */,
+				D87E4B712635C0CC00156D09 /* CommunityView1.swift */,
+				D87E4B742635C37400156D09 /* HStackBottomView.swift */,
+				D87E4B772635CB2300156D09 /* FrameworkDetailView.swift */,
 			);
 			path = Team1Capstone;
 			sourceTree = "<group>";
@@ -150,9 +162,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D87E4B722635C0CC00156D09 /* CommunityView1.swift in Sources */,
+				D87E4B6F2635AF3B00156D09 /* Framework.swift in Sources */,
+				D87E4B752635C37400156D09 /* HStackBottomView.swift in Sources */,
 				D84F001B262B344C00B45C8C /* PhysicalActivityView.swift in Sources */,
 				D84F0004262B33B400B45C8C /* ContentView.swift in Sources */,
 				D84F0002262B33B400B45C8C /* Team1CapstoneApp.swift in Sources */,
+				D87E4B782635CB2300156D09 /* FrameworkDetailView.swift in Sources */,
 				D84F0015262B341000B45C8C /* CommunityView.swift in Sources */,
 				D84F0018262B343000B45C8C /* HealthHabitsView.swift in Sources */,
 				D84F0012262B33EA00B45C8C /* MindfulnessView.swift in Sources */,

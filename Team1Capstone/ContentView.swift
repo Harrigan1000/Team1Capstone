@@ -16,10 +16,8 @@ struct ContentView: View {
                 VStack {
                     Text("A Mind and Body Health App")
                         .font(.title3)
-                       .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                       .foregroundColor(.orange)
-                   
-                
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                        .foregroundColor(.orange)
                     
                     Image(systemName: "at.circle.fill")
                         .renderingMode(.original)
@@ -83,7 +81,7 @@ struct ContentView: View {
                         })
                     
                     NavigationLink(
-                        destination: CommunityView(),
+                        destination: CommunityView1(),
                         label: {
                             Image(systemName: "hands.clap.fill")
                                 .renderingMode(.original)
