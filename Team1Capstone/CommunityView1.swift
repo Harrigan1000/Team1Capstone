@@ -7,23 +7,34 @@
 
 import SwiftUI
 
-let columns: [GridItem] = [GridItem(.flexible()),
-                           GridItem(.flexible()),
-                           GridItem(.flexible())
-]
-
 struct CommunityView1: View {
+    
+    @StateObject var viewModel = FrameworkGridViewModel()
+
+    let columns: [GridItem] = [GridItem(.flexible()),
+                               GridItem(.flexible()),
+                               GridItem(.flexible())
+    ]
+    
+    
     var body: some View {
         NavigationView {
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks, id: \.id) { framework in
                         FrameworkTitleView(framework: framework)
+                            .onTapGesture {
+                                viewModel.selectedFramework = framework
+                            }
                     }
                 }
             }
             
             .navigationTitle("⚕️Community")
+            .sheet(isPresented: $viewModel.isShowingDetailView) {
+                FrameworkDetailView(framework: viewModel.selectedFramework
+                                        ?? MockData.sampleFramework)
+            }
         }
     }
 }
