@@ -59,6 +59,7 @@ struct FrameworkTitleView: View {
             Image(framework.imageName)
                 .resizable()
                 .frame(width: 90, height: 90)
+                .cornerRadius(10)
             Text(framework.name)
                 .font(.title2)
                 .fontWeight(.semibold)
