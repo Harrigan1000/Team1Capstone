@@ -15,7 +15,7 @@ struct MindfulnessView: View {
     // Mark Body:
     var body: some View {
         
-        NavigationView {
+        
             VStack {
                 Text("Day to Day Exercises")
                     .font(.title2)
@@ -94,7 +94,7 @@ struct MindfulnessView: View {
             .onAppear {
                 mindfulnessBullets.sort()
             }
-        }// NAVIGATIONVIEW END POINT
+        
     }// BODY END POINT
 }// STRUCT END POINT
 
@@ -105,3 +105,4 @@ struct MindfulnessView_Previews: PreviewProvider {
         MindfulnessView()
     }
 }
+

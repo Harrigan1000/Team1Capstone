@@ -14,7 +14,7 @@ struct HealthHabitsView: View {
     
     // Mark Body:
     var body: some View {
-        NavigationView {
+        
             VStack {
                 Text("How We Care For Ourselves")
                     .font(.title3)
@@ -94,7 +94,7 @@ struct HealthHabitsView: View {
             
             
             .padding()
-        }//VSTACK END POINT
+        
         .onAppear {
             mainBullets.sort()
         }

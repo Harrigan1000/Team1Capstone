@@ -20,7 +20,7 @@ struct CommunityView1: View {
     
     
     var body: some View {
-        NavigationView {
+    
             ScrollView {
                 LazyVGrid(columns: columns) {
                     ForEach(MockData.frameworks, id: \.id) { framework in
@@ -37,7 +37,7 @@ struct CommunityView1: View {
                 FrameworkDetailView(framework: viewModel.selectedFramework!,
                                     isShowingDetailView: $viewModel.isShowingDetailView)
             }
-        }
+        
     }
 }
 

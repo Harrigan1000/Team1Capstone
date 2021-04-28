@@ -91,8 +91,6 @@ struct PhysicalActivityView: View {
                     Spacer()
                 }//End Point HStack
             }
-            
-            
             .padding()
         }//VSTACK END POINT
         .onAppear {

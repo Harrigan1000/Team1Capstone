@@ -11,7 +11,7 @@ struct CommunityView: View {
     
     
     var body: some View {
-        NavigationView {
+        
             VStack {
                 
                 Text("Building a Community Together")
@@ -30,7 +30,7 @@ struct CommunityView: View {
             .navigationTitle("⚕️Community")
             
             
-        }//End Point Navigation View
+        
     }//End Point Body
 }//End Point Struct
 

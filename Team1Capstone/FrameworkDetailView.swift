@@ -41,7 +41,7 @@ struct FrameworkDetailView: View {
             Button {
                 
             } label: {
-                Text("Learn More")
+                Text("Coming Soon")
                     .font(.title2)
                     .fontWeight(.semibold)
                     .frame(width: 280, height: 50)
