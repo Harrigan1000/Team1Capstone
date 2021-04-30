@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,6 +21,7 @@
 		D87E4B722635C0CC00156D09 /* CommunityView1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B712635C0CC00156D09 /* CommunityView1.swift */; };
 		D87E4B752635C37400156D09 /* HStackBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B742635C37400156D09 /* HStackBottomView.swift */; };
 		D87E4B782635CB2300156D09 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D87E4B772635CB2300156D09 /* FrameworkDetailView.swift */; };
+		D8AD6506263B627C00737E7D /* AppDevWithSwiftLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = D8AD6505263B627C00737E7D /* AppDevWithSwiftLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8AD6506263B627C00737E7D /* AppDevWithSwiftLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +117,9 @@
 			dependencies = (
 			);
 			name = Team1Capstone;
+			packageProductDependencies = (
+				D8AD6505263B627C00737E7D /* AppDevWithSwiftLibrary */,
+			);
 			productName = Team1Capstone;
 			productReference = D84FFFFE262B33B400B45C8C /* Team1Capstone.app */;
 			productType = "com.apple.product-type.application";
@@ -142,6 +147,9 @@
 				Base,
 			);
 			mainGroup = D84FFFF5262B33B400B45C8C;
+			packageReferences = (
+				D8AD6504263B627B00737E7D /* XCRemoteSwiftPackageReference "AppDevWithSwiftLibrary" */,
+			);
 			productRefGroup = D84FFFFF262B33B400B45C8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -368,6 +376,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8AD6504263B627B00737E7D /* XCRemoteSwiftPackageReference "AppDevWithSwiftLibrary" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/iitgrad/AppDevWithSwiftLibrary.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.8.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8AD6505263B627C00737E7D /* AppDevWithSwiftLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8AD6504263B627B00737E7D /* XCRemoteSwiftPackageReference "AppDevWithSwiftLibrary" */;
+			productName = AppDevWithSwiftLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D84FFFF6262B33B400B45C8C /* Project object */;
 }
