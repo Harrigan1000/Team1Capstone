@@ -10,6 +10,7 @@ import SwiftUI
 
 struct MindfulnessView: View {
     
+
     @State var mindfulnessBullets = ["Focus", "Breathing", "Relaxation", "Encouragement"]
     
     // Mark Body:
