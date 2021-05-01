@@ -19,7 +19,7 @@ struct Framework: Hashable, Identifiable {
     let category: Category
     let description: String
 }
-    
+
 struct MockData {
     
     static let sampleFramework = Framework(name: "App Clips",
@@ -98,19 +98,19 @@ struct MockData {
             Framework(name: "Movement",
                       imageName: "Movement",
                       urlString: "https://developer.apple.com/spritekit",
-                      category: Category.HealthHabits,
+                      category: Category.Mindfulness,
                       description: "The SpriteKit framework makes it easy to create high-performance, battery-efficient 2D games.\n\nWith support for custom OpenGL ES shaders and lighting, integration with SceneKit, and advanced new physics effects and animations, you can add force fields, detect collisions, and generate new lighting effects in your games."),
             
             Framework(name: "Suggestions",
                       imageName: "Suggestions",
                       urlString: "https://developer.apple.com/xcode/swiftui",
-                      category: Category.HealthHabits,
+                      category: Category.Community,
                       description: "SwiftUI is an innovative, exceptionally simple way to build user interfaces across all Apple platforms with the power of Swift. Build user interfaces for any Apple device using just one set of tools and APIs.\n\nWith a declarative Swift syntax that’s easy to read and natural to write, SwiftUI works seamlessly with new Xcode design tools to keep your code and design perfectly in sync. Automatic support for Dynamic Type, Dark Mode, localization, and accessibility means your first line of SwiftUI code is already the most powerful UI code you’ve ever written."),
             
             Framework(name: "Breakfast",
                       imageName: "Breakfast",
                       urlString: "https://developer.apple.com/testflight",
-                      category: Category.HealthHabits,
+                      category: Category.PhysicalActivity,
                       description: "TestFlight makes it easy to invite users to test your apps and app clip experiences and collect valuable feedback before releasing your apps on the App Store.\n\nYou can invite up to 10,000 testers using just their email address or by sharing a public link."),
             
             Framework(name: "Lunch",

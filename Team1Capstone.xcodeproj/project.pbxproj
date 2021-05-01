@@ -13,7 +13,7 @@
 		D84F0009262B33B700B45C8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D84F0008262B33B700B45C8C /* Preview Assets.xcassets */; };
 		D84F0012262B33EA00B45C8C /* MindfulnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0011262B33EA00B45C8C /* MindfulnessView.swift */; };
 		D84F0015262B341000B45C8C /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0014262B341000B45C8C /* CommunityView.swift */; };
-		D84F0018262B343000B45C8C /* HealthHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0017262B343000B45C8C /* HealthHabitsView.swift */; };
+		D84F0018262B343000B45C8C /* HabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F0017262B343000B45C8C /* HabitView.swift */; };
 		D84F001B262B344C00B45C8C /* PhysicalActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */; };
 		D85039BE2636169400604C3E /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D85039BD2636169400604C3E /* FrameworkGridViewModel.swift */; };
 		D85039C12636242400604C3E /* Meditation3.png in Resources */ = {isa = PBXBuildFile; fileRef = D85039C02636242400604C3E /* Meditation3.png */; };
@@ -32,7 +32,7 @@
 		D84F000A262B33B700B45C8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D84F0011262B33EA00B45C8C /* MindfulnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MindfulnessView.swift; sourceTree = "<group>"; };
 		D84F0014262B341000B45C8C /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
-		D84F0017262B343000B45C8C /* HealthHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthHabitsView.swift; sourceTree = "<group>"; };
+		D84F0017262B343000B45C8C /* HabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitView.swift; sourceTree = "<group>"; };
 		D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicalActivityView.swift; sourceTree = "<group>"; };
 		D84FFFFE262B33B400B45C8C /* Team1Capstone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Team1Capstone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85039BD2636169400604C3E /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 				D84F0001262B33B400B45C8C /* Team1CapstoneApp.swift */,
 				D84F001A262B344C00B45C8C /* PhysicalActivityView.swift */,
 				D84F0011262B33EA00B45C8C /* MindfulnessView.swift */,
-				D84F0017262B343000B45C8C /* HealthHabitsView.swift */,
+				D84F0017262B343000B45C8C /* HabitView.swift */,
 				D84F0014262B341000B45C8C /* CommunityView.swift */,
 				D84F0003262B33B400B45C8C /* ContentView.swift */,
 				D84F0005262B33B700B45C8C /* Assets.xcassets */,
@@ -186,7 +186,7 @@
 				D87E4B782635CB2300156D09 /* FrameworkDetailView.swift in Sources */,
 				D84F0015262B341000B45C8C /* CommunityView.swift in Sources */,
 				D85039BE2636169400604C3E /* FrameworkGridViewModel.swift in Sources */,
-				D84F0018262B343000B45C8C /* HealthHabitsView.swift in Sources */,
+				D84F0018262B343000B45C8C /* HabitView.swift in Sources */,
 				D84F0012262B33EA00B45C8C /* MindfulnessView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -29,7 +29,7 @@ struct ContentView: View {
                 
                 Group{
                     NavigationLink(
-                        destination: CommunityView1(),
+                        destination: HabitView(category: Category.Community, originalFrameworks: MockData.frameworks),
                         label: {
                             Text("Community")
                         })
@@ -38,7 +38,8 @@ struct ContentView: View {
                         .font(.title)
                     
                     NavigationLink(
-                        destination: HealthHabitsView(),
+                        destination: HabitView(category: Category.HealthHabits,
+                                                      originalFrameworks: MockData.frameworks),
                         label: {
                             Text("Health Habits")
                         })
@@ -47,7 +48,7 @@ struct ContentView: View {
                         .font(.title)
                     
                     NavigationLink(
-                        destination: MindfulnessView(),
+                        destination: HabitView(category: Category.Mindfulness, originalFrameworks: MockData.frameworks),
                         label: {
                             Text("Mindfulness")
                         })
@@ -56,7 +57,7 @@ struct ContentView: View {
                         .font(.title)
                     
                     NavigationLink(
-                        destination: PhysicalActivityView(),
+                        destination: HabitView(category: Category.PhysicalActivity, originalFrameworks: MockData.frameworks),
                         label: {
                             Text("Physical Activity")
                         })
@@ -68,59 +69,59 @@ struct ContentView: View {
                 
                 
                 //HSTACK links to screens - located bottom of the screen
-                HStack{
-                    Spacer()
-                    NavigationLink(
-                        destination: ContentView(),
-                        label: {
-                            Image(systemName: "house.circle")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:50, height:50)
-                        })
-                    
-                    NavigationLink(
-                        destination: CommunityView1(),
-                        label: {
-                            Image(systemName: "hands.clap.fill")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:50, height:50)
-                        })
-                    
-                    NavigationLink(
-                        destination: HealthHabitsView(),
-                        label: {
-                            Image(systemName: "heart.circle")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:50, height:50)
-                        })
-                    
-                    NavigationLink(
-                        destination: MindfulnessView(),
-                        label: {
-                            Image(systemName: "face.smiling")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:50, height:50)
-                        })
-                    
-                    NavigationLink(
-                        destination: PhysicalActivityView(),
-                        label: {
-                            Image(systemName: "bicycle")
-                                .renderingMode(.original)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width:50, height:50)
-                        })
-                    Spacer()
-                }//End Point HStack
+//                HStack{
+//                    Spacer()
+//                    NavigationLink(
+//                        destination: ContentView(),
+//                        label: {
+//                            Image(systemName: "house.circle")
+//                                .renderingMode(.original)
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width:50, height:50)
+//                        })
+//                    
+//                    NavigationLink(
+//                        destination: CommunityView1(),
+//                        label: {
+//                            Image(systemName: "hands.clap.fill")
+//                                .renderingMode(.original)
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width:50, height:50)
+//                        })
+//                    
+//                    NavigationLink(
+//                        destination: HealthHabitsView(category: Category.HealthHabits, originalFrameworks: MockData.frameworks),
+//                        label: {
+//                            Image(systemName: "heart.circle")
+//                                .renderingMode(.original)
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width:50, height:50)
+//                        })
+//                    
+//                    NavigationLink(
+//                        destination: MindfulnessView(),
+//                        label: {
+//                            Image(systemName: "face.smiling")
+//                                .renderingMode(.original)
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width:50, height:50)
+//                        })
+//                    
+//                    NavigationLink(
+//                        destination: PhysicalActivityView(),
+//                        label: {
+//                            Image(systemName: "bicycle")
+//                                .renderingMode(.original)
+//                                .resizable()
+//                                .aspectRatio(contentMode: .fit)
+//                                .frame(width:50, height:50)
+//                        })
+//                    Spacer()
+//                }//End Point HStack
                 .padding()
                 
                 Spacer()

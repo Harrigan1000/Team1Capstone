@@ -33,7 +33,8 @@ struct HStackBottomView: View {
                 })
             
             NavigationLink(
-                destination: HealthHabitsView(),
+                destination: HabitView(category: Category.HealthHabits,
+                                              originalFrameworks: MockData.frameworks),
                 label: {
                     Image(systemName: "heart.circle")
                         .renderingMode(.original)

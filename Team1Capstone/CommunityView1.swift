@@ -33,10 +33,6 @@ struct CommunityView1: View {
             }
             
             .navigationTitle("⚕️Community")
-            .sheet(isPresented: $viewModel.isShowingDetailView) {
-                FrameworkDetailView(framework: viewModel.selectedFramework!,
-                                    isShowingDetailView: $viewModel.isShowingDetailView)
-            }
         
     }
 }
