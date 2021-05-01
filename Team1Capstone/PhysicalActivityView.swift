@@ -13,7 +13,6 @@ struct PhysicalActivityView: View {
     @State var mainBullets = ["Strength", "Resistance", "Flexibility", "My Movements", "Suggestions to Improve"]
     @State private var showModalScreen = false
     
-    
     // Mark Body:
     var body: some View {
         NavigationView {
