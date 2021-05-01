@@ -12,24 +12,24 @@ struct CommunityView: View {
     
     var body: some View {
         
-            VStack {
-                
-                Text("Building a Community Together")
-                    .font(.title3)
-                    .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(.orange)
-                
-                
-                Spacer()
-                
-                HStackBottomView()
-
-                
-                
-            }//End Point VSTACK
-            .navigationTitle("⚕️Community")
+        VStack {
+            
+            Text("Building a Community Together")
+                .font(.title3)
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.orange)
             
             
+            Spacer()
+            
+            HStackBottomView()
+            
+            
+            
+        }//End Point VSTACK
+        .navigationTitle("⚕️Community")
+        
+        
         
     }//End Point Body
 }//End Point Struct
