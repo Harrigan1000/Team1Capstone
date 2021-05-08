@@ -32,9 +32,6 @@ struct MindfulnessView: View {
                     })
                     .padding()
             }
-            
-            //HSTACK links to screens - located bottom of the screen
-            HStackBottomView()
                 .padding()
         }//VSTACK END POINT
         .navigationTitle(" ⚕️Mindfulness")

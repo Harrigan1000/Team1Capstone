@@ -24,19 +24,29 @@ struct HabitView: View {
                 .foregroundColor(.orange)
             
             
-            List(mainBullets, id: \.self) {
-                bullet in
-                NavigationLink(
-                    destination: FrameworkDetailView(framework: bullet),
-                    label: {
-                        Text(bullet.name)
-                    })
-                    .padding()
+            List(mainBullets, id: \.self) { bullet in
+                if bullet.name == "MealPrep" {
+                    NavigationLink(
+                        destination: WebURLView(),
+                        label: {
+                            Text(bullet.name)
+                        })
+                        .padding()
+                } else {
+                    NavigationLink(
+                        destination: FrameworkDetailView(framework: bullet),
+                        label: {
+                            Text(bullet.name)
+                        })
+                        .padding()
+                }
+                
+                
             }
             .navigationTitle(title())
             .foregroundColor(.yellow)
             .font(/*@START_MENU_TOKEN@*/.largeTitle/*@END_MENU_TOKEN@*/)
-            
+           
             
             //HSTACK links to screens - located bottom of the screen
 //            HStack{
